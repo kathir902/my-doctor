@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my doctor app select location </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="hospital-body">
+        <div class="hospital-container">
+            <h1>select your hospital</h1>
+            <form action="">
+                <label for="state">select state:</label>
+                <select name="" id="state" onchange="populateHospitals()">
+                    <option value="">--select state--</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="osun">Osun</option>
+                    <option value="edo">Edo</option>
+                    <option value="delta">Delta</option>
+                </select>
+    
+                <label for="hospital">Select Hospital:</label>
+                <select name="" id="hospital">
+                    <option value="">--select hospital--</option>
+                </select>
+            </form>
+            <button>submit</button>
+
+        </div>
+    
+        <div class="patient-id">
+            <h1>input patient-id carefully</h1>
+            <form action="">
+               <input type="text" placeholder="Patient Identity Number">
+               <input type="text" placeholder="pin">
+            </form>
+            <button><a href="./dashboard.html">access my account</a></button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./location.js"></script>
+</body>
+</html>
